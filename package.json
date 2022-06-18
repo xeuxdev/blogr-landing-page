@@ -1,0 +1,13 @@
+{
+  "name": "blogr-landing-page-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i src/input.css -o public/output.css --watch",
+    "minify": "npx tailwindcss -i src/input.css -o public/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
