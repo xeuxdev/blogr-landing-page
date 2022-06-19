@@ -13,6 +13,7 @@ module.exports = {
       ctaHoverBg: "hsl(355, 100%, 74%)",
       heading: "hsl(208, 49%, 24%)",
       text: "hsl(0, 0%, 100%)",
+      textLIght: "hsla(0, 0%, 100%, 0.85)",
       footerText: "hsl(240, 2%, 79%)",
       footerBg: "hsl(240, 10%, 16%)",
       bodyCopy: "hsl(207, 13%, 34%)",

@@ -5,6 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.active{
+    display: block;
+}
+.active-link{
+    color: hsl(0, 0%, 100%);
+}
+.dropdown-link{
+    @apply text-bodyCopy hover:text-veryDGB font-semibold block;
+}
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
