@@ -508,36 +508,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 100%;
 }
 
-.left-1{
-  left: 0.25rem;
-}
-
 .left-1\/2{
   left: 50%;
 }
 
-.bottom-5{
-  bottom: 1.25rem;
-}
-
-.-bottom-5{
-  bottom: -1.25rem;
-}
-
-.z-30{
-  z-index: 30;
-}
-
 .z-20{
   z-index: 20;
-}
-
-.mr-\[3\.75rem\]{
-  margin-right: 3.75rem;
-}
-
-.block{
-  display: block;
 }
 
 .flex{
@@ -552,9 +528,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 37.5rem;
 }
 
-.-translate-x-1{
-  --tw-translate-x: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.w-full{
+  width: 100%;
 }
 
 .-translate-x-1\/2{
@@ -578,20 +553,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded{
-  border-radius: 0.25rem;
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-md{
@@ -602,19 +571,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
-.rounded-b{
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
-.rounded-bl{
-  border-bottom-left-radius: 0.25rem;
-}
-
-.rounded-bl-full{
-  border-bottom-left-radius: 9999px;
-}
-
 .rounded-bl-\[5rem\]{
   border-bottom-left-radius: 5rem;
 }
@@ -622,6 +578,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-text{
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.bg-lightRed{
+  --tw-bg-opacity: 1;
+  background-color: hsl(353 100% 62% / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -642,69 +603,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .px-9{
   padding-left: 2.25rem;
   padding-right: 2.25rem;
 }
 
-.pt-14{
-  padding-top: 3.5rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
-}
-
-.pt-\[\]{
-  padding-top: ;
-}
-
-.pt-\[3\]{
-  padding-top: 3;
-}
-
-.pt-\[3\.\]{
-  padding-top: 3.;
-}
-
-.pt-\[3\.2\]{
-  padding-top: 3.2;
-}
-
-.pt-\[3\.25\]{
-  padding-top: 3.25;
-}
-
-.pt-\[3\.25r\]{
-  padding-top: 3.25r;
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pt-\[3\.25rem\]{
   padding-top: 3.25rem;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .text-text{
@@ -724,6 +634,404 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:inset-0::before{
+  content: var(--tw-content);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.before\:right-5::before{
+  content: var(--tw-content);
+  right: 1.25rem;
+}
+
+.before\:right-52::before{
+  content: var(--tw-content);
+  right: 13rem;
+}
+
+.before\:right-1::before{
+  content: var(--tw-content);
+  right: 0.25rem;
+}
+
+.before\:right-1\/2::before{
+  content: var(--tw-content);
+  right: 50%;
+}
+
+.before\:-right-1\/2::before{
+  content: var(--tw-content);
+  right: -50%;
+}
+
+.before\:top-0::before{
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:-right-3::before{
+  content: var(--tw-content);
+  right: -0.75rem;
+}
+
+.before\:-right-3\/4::before{
+  content: var(--tw-content);
+  right: -75%;
+}
+
+.before\:-top-5::before{
+  content: var(--tw-content);
+  top: -1.25rem;
+}
+
+.before\:-top-52::before{
+  content: var(--tw-content);
+  top: -13rem;
+}
+
+.before\:top-52::before{
+  content: var(--tw-content);
+  top: 13rem;
+}
+
+.before\:top-5::before{
+  content: var(--tw-content);
+  top: 1.25rem;
+}
+
+.before\:top-2::before{
+  content: var(--tw-content);
+  top: 0.5rem;
+}
+
+.before\:top-20::before{
+  content: var(--tw-content);
+  top: 5rem;
+}
+
+.before\:-top-20::before{
+  content: var(--tw-content);
+  top: -5rem;
+}
+
+.before\:-right-\[5\]::before{
+  content: var(--tw-content);
+  right: -5;
+}
+
+.before\:-right-\[58\]::before{
+  content: var(--tw-content);
+  right: -58;
+}
+
+.before\:-right-\[58\%\]::before{
+  content: var(--tw-content);
+  right: -58%;
+}
+
+.before\:-right-\[8\%\]::before{
+  content: var(--tw-content);
+  right: -8%;
+}
+
+.before\:-right-\[80\%\]::before{
+  content: var(--tw-content);
+  right: -80%;
+}
+
+.before\:-top-32::before{
+  content: var(--tw-content);
+  top: -8rem;
+}
+
+.before\:block::before{
+  content: var(--tw-content);
+  display: block;
+}
+
+.before\:h-full::before{
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:h-\[full\]::before{
+  content: var(--tw-content);
+  height: full;
+}
+
+.before\:h-\[1\]::before{
+  content: var(--tw-content);
+  height: 1;
+}
+
+.before\:h-\[18\]::before{
+  content: var(--tw-content);
+  height: 18;
+}
+
+.before\:h-\[180\]::before{
+  content: var(--tw-content);
+  height: 180;
+}
+
+.before\:h-\[180\%\]::before{
+  content: var(--tw-content);
+  height: 180%;
+}
+
+.before\:h-\[18\%\]::before{
+  content: var(--tw-content);
+  height: 18%;
+}
+
+.before\:h-\[1\%\]::before{
+  content: var(--tw-content);
+  height: 1%;
+}
+
+.before\:h-\[13\%\]::before{
+  content: var(--tw-content);
+  height: 13%;
+}
+
+.before\:h-\[135\%\]::before{
+  content: var(--tw-content);
+  height: 135%;
+}
+
+.before\:w-full::before{
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:w-\[full\]::before{
+  content: var(--tw-content);
+  width: full;
+}
+
+.before\:w-\[1\]::before{
+  content: var(--tw-content);
+  width: 1;
+}
+
+.before\:w-\[15\]::before{
+  content: var(--tw-content);
+  width: 15;
+}
+
+.before\:w-\[150\]::before{
+  content: var(--tw-content);
+  width: 150;
+}
+
+.before\:w-\[150\%\]::before{
+  content: var(--tw-content);
+  width: 150%;
+}
+
+.before\:w-\[15\%\]::before{
+  content: var(--tw-content);
+  width: 15%;
+}
+
+.before\:w-\[1\%\]::before{
+  content: var(--tw-content);
+  width: 1%;
+}
+
+.before\:w-\[18\%\]::before{
+  content: var(--tw-content);
+  width: 18%;
+}
+
+.before\:w-\[183\%\]::before{
+  content: var(--tw-content);
+  width: 183%;
+}
+
+.before\:bg-\[url\(\)\]::before{
+  content: var(--tw-content);
+  background-image: url();
+}
+
+.before\:bg-\[url\(\'\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('');
+}
+
+.before\:bg-\[url\(\'\.\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('.');
+}
+
+.before\:bg-\[url\(\'\.\.\/\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../');
+}
+
+.before\:bg-\[url\(\'\.\.\/i\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../i');
+}
+
+.before\:bg-\[url\(\'\.\.\/ima\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../ima');
+}
+
+.before\:bg-\[url\(\'\.\.\/imag\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../imag');
+}
+
+.before\:bg-\[url\(\'\.\.\/image\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../image');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/b\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/b');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-p\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-p');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pa\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pa');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pat\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pat');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-patte\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-patte');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-patter\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-patter');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-in\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-in');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-int\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-int');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intr\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intr');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-m\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-m');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mo\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-mo');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mob\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-mob');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mobile\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-mobile');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mobile\.\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-mobile.');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mobile\.s\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-mobile.s');
+}
+
+.before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mobile\.svg\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../images/bg-pattern-intro-mobile.svg');
+}
+
+.before\:bg-contain::before{
+  content: var(--tw-content);
+  background-size: contain;
+}
+
+.before\:bg-center::before{
+  content: var(--tw-content);
+  background-position: center;
+}
+
+.before\:bg-no-repeat::before{
+  content: var(--tw-content);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 1120px){
@@ -762,5 +1070,290 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pt-14{
     padding-top: 3.5rem;
+  }
+
+  .lg\:before\:right-\[83\%\]::before{
+    content: var(--tw-content);
+    right: 83%;
+  }
+
+  .lg\:before\:-right-\[83\%\]::before{
+    content: var(--tw-content);
+    right: -83%;
+  }
+
+  .lg\:before\:-top-40::before{
+    content: var(--tw-content);
+    top: -10rem;
+  }
+
+  .lg\:before\:-right-\[8\%\]::before{
+    content: var(--tw-content);
+    right: -8%;
+  }
+
+  .lg\:before\:-right-\[84\%\]::before{
+    content: var(--tw-content);
+    right: -84%;
+  }
+
+  .lg\:before\:-right-\[4\%\]::before{
+    content: var(--tw-content);
+    right: -4%;
+  }
+
+  .lg\:before\:-right-\[94\%\]::before{
+    content: var(--tw-content);
+    right: -94%;
+  }
+
+  .lg\:before\:-right-\[9\%\]::before{
+    content: var(--tw-content);
+    right: -9%;
+  }
+
+  .lg\:before\:-right-\[93\%\]::before{
+    content: var(--tw-content);
+    right: -93%;
+  }
+
+  .lg\:before\:h-\[\]::before{
+    content: var(--tw-content);
+    height: ;
+  }
+
+  .lg\:before\:h-\[1\]::before{
+    content: var(--tw-content);
+    height: 1;
+  }
+
+  .lg\:before\:h-\[13\]::before{
+    content: var(--tw-content);
+    height: 13;
+  }
+
+  .lg\:before\:h-\[135\]::before{
+    content: var(--tw-content);
+    height: 135;
+  }
+
+  .lg\:before\:h-\[135\%\]::before{
+    content: var(--tw-content);
+    height: 135%;
+  }
+
+  .lg\:before\:w-\[\]::before{
+    content: var(--tw-content);
+    width: ;
+  }
+
+  .lg\:before\:w-\[2\]::before{
+    content: var(--tw-content);
+    width: 2;
+  }
+
+  .lg\:before\:w-\[200\]::before{
+    content: var(--tw-content);
+    width: 200;
+  }
+
+  .lg\:before\:w-\[200\%\]::before{
+    content: var(--tw-content);
+    width: 200%;
+  }
+
+  .lg\:before\:w-\[20\%\]::before{
+    content: var(--tw-content);
+    width: 20%;
+  }
+
+  .lg\:before\:w-\[220\%\]::before{
+    content: var(--tw-content);
+    width: 220%;
+  }
+
+  .lg\:before\:bg-\[url\(\)\]::before{
+    content: var(--tw-content);
+    background-image: url();
+  }
+
+  .lg\:before\:bg-\[url\(\'\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('.');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/i\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../i');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/ima\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../ima');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/image\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../image');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/b\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/b');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-p\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-p');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pa\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pa');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pat\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pat');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-patt\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-patt');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-patte\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-patte');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-patter\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-patter');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-int\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-int');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-d\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-d');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-des\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-des');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-desk\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-desk');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-deskt\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-deskt');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-deskto\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-deskto');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-desktop\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-desktop');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-desktop\.\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-desktop.');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pattern-intro-desktop\.svg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pattern-intro-desktop.svg');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg--intro-desktop\.svg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg--intro-desktop.svg');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-intro-desktop\.svg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-intro-desktop.svg');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-p-intro-desktop\.svg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-p-intro-desktop.svg');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-pa-intro-desktop\.svg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-pa-intro-desktop.svg');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-patt-intro-desktop\.svg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-patt-intro-desktop.svg');
+  }
+
+  .lg\:before\:bg-\[url\(\'\.\.\/images\/bg-patter-intro-desktop\.svg\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('../images/bg-patter-intro-desktop.svg');
   }
 }
