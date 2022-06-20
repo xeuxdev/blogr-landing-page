@@ -33,3 +33,7 @@ dropLink3.addEventListener("click", () => {
         dropDownMenu3.classList.contains("active")? dropDownMenu3.classList.remove("active") : dropDownMenu3.classList.add("active")
     })
 })
+
+const mobileDRopdown = document.querySelectorAll(".mobiledropdown")
+const openLink = document.querySelectorAll(".open-link")
+

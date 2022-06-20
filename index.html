@@ -13,69 +13,124 @@
 </head>
 <body>
 
-  <main>
+  <main class="overflow-x-hidden">
 
-    <section class="hero relative bg-gradient-to-r from-veryLightRed to-lightRed h-[37.5rem] rounded-bl-[5rem] before:absolute before:w-[183%] before:h-[180%] before:bg-[url('../images/bg-pattern-intro-mobile.svg')] lg:before:bg-[url('../images/bg-pattern-intro-desktop.svg')] before:bg-no-repeat before:bg-[277%] before:bg-center overflow-hidden before:-top-32 before:-right-[80%] lg:before:w-[220%] lg:before:h-[135%] lg:before:-right-[93%] lg:before:-top-40 ">
+    <section class="hero relative bg-gradient-to-r from-veryLightRed to-lightRed h-[37.5rem] rounded-bl-[5rem] before:absolute before:w-[183%] before:h-[180%] before:bg-[url('../images/bg-pattern-intro-mobile.svg')] lg:before:bg-[url('../images/bg-pattern-intro-desktop.svg')] before:bg-no-repeat before:bg-[length:277%] before:bg-center before:-top-32 before:-right-[80%] lg:before:w-[220%] lg:before:h-[135%] lg:before:-right-[93%] lg:before:-top-40 overflow-hidden">
       <div class="container pt-[3.25rem] px-5 lg:px-0 lg:pt-14">
-        <nav class="flex items-center justify-between relative z-20 ">
+        <nav class="flex items-center justify-between relative ">
 
-          <!-- logo and dropdowns -->
-          <div class="flex items-center justify-start">
-            <img src="images/logo.svg" alt="logo" class="lg:mr-[3.75rem]">
+            <!-- logo and dropdowns -->
+            <div class="flex items-center justify-start">
+              <img src="images/logo.svg" alt="logo" class="lg:mr-[3.75rem]">
 
-            <div class="dropdowns hidden lg:flex lg:items-center lg:space-x-8">
+              <div class="dropdowns hidden lg:flex lg:items-center lg:space-x-8">
 
-              <!-- dropdown 1 -->
-              <div class="flex relative">
-                <p class="flex items-center justify-center space-x-1 text-textLIght hover:text-text">
-                  <a href="#" class="hover:underline drop-link">Product</a>
-                  <img src="images/icon-arrow-light.svg" alt="icon-arrow-light">
-                </p>
-                <div class="dropmenu dropmenu1 hidden w-[10.625rem] pl-5 py-[1.875rem] text-left absolute top-[155%] left-1/2 -translate-x-1/3 bg-text rounded-md space-y-2">
-                  <a href="#" class="dropdown-link">Overview</a>
-                  <a href="#" class="dropdown-link">Pricing</a>
-                  <a href="#" class="dropdown-link">Marketplace</a>
-                  <a href="#" class="dropdown-link">Features</a>
-                  <a href="#" class="dropdown-link">Integrations</a>
+                <!-- dropdown 1 -->
+                <div class="flex relative">
+                  <p class="flex items-center justify-center space-x-1 text-textLIght hover:text-text">
+                    <a href="#" class="hover:underline drop-link">Product</a>
+                    <img src="images/icon-arrow-light.svg" alt="icon-arrow-light">
+                  </p>
+                  <div class="dropmenu dropmenu1 hidden w-[10.625rem] pl-5 py-[1.875rem] text-left absolute top-[155%] left-1/2 -translate-x-1/3 bg-text rounded-md space-y-2">
+                    <a href="#" class="dropdown-link">Overview</a>
+                    <a href="#" class="dropdown-link">Pricing</a>
+                    <a href="#" class="dropdown-link">Marketplace</a>
+                    <a href="#" class="dropdown-link">Features</a>
+                    <a href="#" class="dropdown-link">Integrations</a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- dropdown 2 -->
-              <div class="flex relative">
-                <p class="flex items-center space-x-1 text-textLIght hover:text-text">
-                  <a href="#" class="hover:underline drop-link2">Company</a>
-                  <img src="images/icon-arrow-light.svg" alt="icon-arrow-light">
-                </p>
-                <div class="dropmenu dropmenu2 hidden w-[10.625rem] pl-5 py-[1.875rem] text-left absolute top-[155%] left-1/2 -translate-x-1/3 bg-text rounded-md space-y-2">
-                  <a href="#" class="dropdown-link">About</a>
-                  <a href="#" class="dropdown-link">Team</a>
-                  <a href="#" class="dropdown-link">Blog</a>
-                  <a href="#" class="dropdown-link">Careers</a>
+                <!-- dropdown 2 -->
+                <div class="flex relative">
+                  <p class="flex items-center space-x-1 text-textLIght hover:text-text">
+                    <a href="#" class="hover:underline drop-link2">Company</a>
+                    <img src="images/icon-arrow-light.svg" alt="icon-arrow-light">
+                  </p>
+                  <div class="dropmenu dropmenu2 hidden w-[10.625rem] pl-5 py-[1.875rem] text-left absolute top-[155%] left-1/2 -translate-x-1/3 bg-text rounded-md space-y-2">
+                    <a href="#" class="dropdown-link">About</a>
+                    <a href="#" class="dropdown-link">Team</a>
+                    <a href="#" class="dropdown-link">Blog</a>
+                    <a href="#" class="dropdown-link">Careers</a>
+                  </div>
                 </div>
-              </div>
 
-              <!-- dropdown 3 -->
-              <div class="flex relative">
-                <p class="flex items-center space-x-1 text-textLIght hover:text-text">
-                  <a href="#" class="hover:underline drop-link3">Connect</a>
-                  <img src="images/icon-arrow-light.svg" alt="icon-arrow-light">
-                </p>
-                <div class="dropmenu dropmenu3 hidden w-[10.625rem] pl-5 py-[1.875rem] text-left absolute top-[155%] left-1/2 -translate-x-1/3 bg-text rounded-md space-y-2">
-                  <a href="#" class="dropdown-link">Contact</a>
-                  <a href="#" class="dropdown-link">Newsletter</a>
-                  <a href="#" class="dropdown-link">LinkedIn</a>
+                <!-- dropdown 3 -->
+                <div class="flex relative">
+                  <p class="flex items-center space-x-1 text-textLIght hover:text-text">
+                    <a href="#" class="hover:underline drop-link3">Connect</a>
+                    <img src="images/icon-arrow-light.svg" alt="icon-arrow-light">
+                  </p>
+                  <div class="dropmenu dropmenu3 hidden w-[10.625rem] pl-5 py-[1.875rem] text-left absolute top-[155%] left-1/2 -translate-x-1/3 bg-text rounded-md space-y-2">
+                    <a href="#" class="dropdown-link">Contact</a>
+                    <a href="#" class="dropdown-link">Newsletter</a>
+                    <a href="#" class="dropdown-link">LinkedIn</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="cta-btn-groups hidden lg:flex lg:items-center lg:space-x-7">
-            <a href="#" class="text-text">Login</a>
-            <a href="#" class="text-ctaText bg-text hover:bg-ctaHoverBg hover:text-text rounded-full w-[9.0625rem] text-center py-3 duration-200">Sign Up</a>
-          </div>
+            <div class="cta-btn-groups hidden lg:flex lg:items-center lg:space-x-7">
+              <a href="#" class="text-text">Login</a>
+              <a href="#" class="text-ctaText bg-text hover:bg-ctaHoverBg hover:text-text rounded-full w-[9.0625rem] text-center py-3 duration-200">Sign Up</a>
+            </div>
 
+          <!-- mobile hamburger -->
           <div class="hamburger-menu-icon lg:hidden">
             <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="" id="hamburger">
+          </div>
+
+          <!-- mobilemenu -->
+          <div class="mobilemenu h-[32.1875rem] fixed top-[7.8125rem] left-1/2 -translate-x-1/2 bg-text rounded-lg px-5 py-8 shadow-lg shadow-bodyCopy z-50 md:hidden">
+            <div>
+
+              <!-- dropdowns -->
+              <div class="flex justify-center flex-col items-center space-y-6">
+                <!-- dropdown one -->
+                <!-- dropdown 1 -->
+                <div class="flex relative">
+                  <p class="flex items-center justify-center space-x-2 text-footerBg text-center">
+                    <a href="#" class="hover:underline link text-xl font-semibold mobiledropdown">Product</a>
+                    <img src="images/icon-arrow-dark.svg" alt="icon-arrow-light">
+                  </p>
+                  <div class="open-link w-[18.1875rem] text-center py-[1.875rem] absolute top-[155%] left-1/2 -translate-x-1/2 bg-mobileMenuBg rounded-md space-y-3 duration-300 z-50">
+                    <a href="#" class="dropdown-mobile">Overview</a>
+                    <a href="#" class="dropdown-mobile">Pricing</a>
+                    <a href="#" class="dropdown-mobile">Marketplace</a>
+                    <a href="#" class="dropdown-mobile">Features</a>
+                    <a href="#" class="dropdown-mobile">Integrations</a>
+                  </div>
+                </div>
+
+                <!-- dropdown 2 -->
+                <div class="flex relative">
+                  <p class="flex items-center justify-center space-x-2 text-footerBg text-center">
+                    <a href="#" class="hover:underline link text-xl font-semibold mobiledropdown">Company</a>
+                    <img src="images/icon-arrow-dark.svg" alt="icon-arrow-light">
+                  </p>
+                  <div class="open-link w-[18.1875rem] text-center py-[1.875rem] absolute top-[155%] left-1/2 -translate-x-1/2 bg-mobileMenuBg rounded-md space-y-3 duration-300">
+                    <a href="#" class="dropdown-mobile">About</a>
+                    <a href="#" class="dropdown-mobile">Team</a>
+                    <a href="#" class="dropdown-mobile">Blog</a>
+                    <a href="#" class="dropdown-mobile">Careers</a>
+                  </div>
+                </div>
+                
+
+                <!-- dropdown 3 -->
+                <div class="flex relative">
+                  <p class="flex items-center justify-center space-x-2 text-footerBg text-center">
+                    <a href="#" class="hover:underline link text-xl font-semibold mobiledropdown">Connect</a>
+                    <img src="images/icon-arrow-dark.svg" alt="icon-arrow-light">
+                  </p>
+                  <div class="open-link w-[18.1875rem] text-center py-[1.875rem] absolute top-[155%] left-1/2 -translate-x-1/2 bg-mobileMenuBg rounded-md space-y-3 duration-300">
+                    <a href="#" class="dropdown-mobile">Contact</a>
+                    <a href="#" class="dropdown-mobile">Newsletter</a>
+                    <a href="#" class="dropdown-mobile">LinkedIn</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </nav>
       </div>

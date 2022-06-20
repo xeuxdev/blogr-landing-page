@@ -15,6 +15,7 @@ module.exports = {
       text: "hsl(0, 0%, 100%)",
       textLIght: "hsla(0, 0%, 100%, 0.85)",
       footerText: "hsl(240, 2%, 79%)",
+      mobileMenuBg: "hsla(240, 2%, 79%, 0.8)",
       footerBg: "hsl(240, 10%, 16%)",
       bodyCopy: "hsl(207, 13%, 34%)",
       /*Background gradient - Intro/CTA mobile nav: */

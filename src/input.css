@@ -14,5 +14,23 @@
 .dropdown-link{
     @apply text-bodyCopy hover:text-veryDGB font-semibold block;
 }
+.mobilemenu{
+    width: calc(100% - 20px);
+}
+.dropdown-mobile{
+    @apply text-bodyCopy text-xl hover:text-veryDGB font-semibold block ;
+}
+.open-link{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.open{
+   height: auto;
+   width: 18.1875rem;
+   overflow: auto;
+   visibility: visible; 
+}
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
