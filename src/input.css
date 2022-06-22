@@ -20,17 +20,11 @@
 .dropdown-mobile{
     @apply text-bodyCopy text-xl hover:text-veryDGB font-semibold block ;
 }
-.open-link{
-    height: 0px;
-    width: 0px;
-    overflow: hidden;
-    visibility: hidden;
+.show{
+    transform: scale(1) translateX(-50%);
+    opacity: 1;
+    visibility: visible;
 }
-.open{
-   height: auto;
-   width: 18.1875rem;
-   overflow: auto;
-   visibility: visible; 
-}
+
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
