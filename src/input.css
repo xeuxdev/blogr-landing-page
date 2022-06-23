@@ -5,9 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-    display: block;
-}
+
 .active-link{
     color: hsl(0, 0%, 100%);
 }
@@ -20,6 +18,19 @@
 .dropdown-mobile{
     @apply text-bodyCopy text-xl hover:text-veryDGB font-semibold block ;
 }
+.show{
+    transform: scale(1) translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown.active .dropmenu{
+    display: block;
+}
+
+.mobileDropdown.active .open-link{
+    display: block;
+}
+
 .show{
     transform: scale(1) translateX(-50%);
     opacity: 1;
