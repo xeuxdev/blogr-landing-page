@@ -545,6 +545,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mt-28{
+  margin-top: 7rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .block{
   display: block;
 }
@@ -637,6 +645,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-auto{
   overflow: auto;
 }
@@ -665,6 +679,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-left-radius: 5rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -672,6 +690,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-bodyCopy{
   --tw-border-opacity: 1;
   border-color: hsl(207 13% 34% / var(--tw-border-opacity));
+}
+
+.border-text{
+  --tw-border-opacity: 1;
+  border-color: hsl(0 0% 100% / var(--tw-border-opacity));
 }
 
 .bg-text{
@@ -697,8 +720,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, hsl(355 100% 74% / 0));
 }
 
-.to-lightRed{
-  --tw-gradient-to: hsl(353, 100%, 62%);
+.to-lightRedDull{
+  --tw-gradient-to: hsla(353, 100%, 62%, 0.9);
 }
 
 .to-ctaText{
@@ -730,6 +753,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pt-\[3\.25rem\]{
   padding-top: 3.25rem;
 }
@@ -752,6 +780,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-xl{
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -923,9 +961,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(355 100% 74% / var(--tw-bg-opacity));
 }
 
+.hover\:bg-text:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
 .hover\:text-text:hover{
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.hover\:text-ctaHoverBg:hover{
+  --tw-text-opacity: 1;
+  color: hsl(355 100% 74% / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -942,6 +990,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1120px){
   .lg\:mr-\[3\.75rem\]{
     margin-right: 3.75rem;
+  }
+
+  .lg\:mt-32{
+    margin-top: 8rem;
   }
 
   .lg\:flex{
@@ -975,6 +1027,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pt-14{
     padding-top: 3.5rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:before\:-right-\[93\%\]::before{
