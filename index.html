@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="public/output.css" />
     <script src="./public/script.js" defer></script>
   </head>
-  <body>
-    <main class="overflow-x-hidden">
+  <body class="overflow-x-hidden">
+    <main>
+      <!-- hero section -->
       <section
-        class="hero relative bg-gradient-to-r from-veryLightRed to-lightRed h-[37.5rem] rounded-bl-[5rem] before:absolute before:w-[183%] before:h-[180%] before:bg-[url('../images/bg-pattern-intro-mobile.svg')] lg:before:bg-[url('../images/bg-pattern-intro-desktop.svg')] before:bg-no-repeat before:bg-[length:277%] before:bg-center before:-top-32 before:-right-[80%] lg:before:w-[220%] lg:before:h-[135%] lg:before:-right-[93%] lg:before:-top-40 overflow-hidden"
+        class="hero relative bg-gradient-to-r from-veryLightRed to-lightRed h-[37.5rem] rounded-bl-[5rem] before:absolute before:w-[183%] before:h-[180%] before:bg-[url('../images/bg-pattern-intro-mobile.svg')] lg:before:bg-[url('../images/bg-pattern-intro-desktop.svg')] before:bg-no-repeat before:bg-center before:-top-32 before:-right-[80%] lg:before:w-[220%] lg:before:h-[135%] lg:before:-right-[93%] lg:before:-top-40 overflow-hidden"
       >
         <div class="container pt-[3.25rem] px-5 lg:px-0 lg:pt-14">
           <nav class="flex items-center justify-between relative">
@@ -118,7 +119,7 @@
 
             <!-- mobilemenu -->
             <div
-              class="mobilemenu h-[32.1875rem] fixed top-[7.8125rem] left-1/2 -translate-x-1/2 bg-text rounded-lg px-5 py-8 shadow-2xl shadow-footerText scale-0 opacity-0 invisible md:hidden overflow-auto duration-500"
+              class="mobilemenu h-[32.1875rem] fixed top-[7.8125rem] left-1/2 -translate-x-1/2 bg-text rounded-lg px-5 py-8 shadow-2xl shadow-footerText scale-0 opacity-0 invisible md:hidden overflow-auto duration-500 z-50"
             >
               <!-- dropdowns -->
               <div
@@ -241,19 +242,51 @@
           </div>
         </div>
       </section>
+
+
+      <!-- about -->
+      <section class="relative mb-[16.25rem] lg:mb-[19.25rem]">
+        <div class="container pt-[6.4375rem] lg:pt-[9.5625rem] ">
+
+          <!-- heading -->
+          <div class="px-5">
+            <h2 class="text-center text-3xl text-footerBg lg:text-4xl font-bold mb-12">Designed for the future</h2>
+          </div>
+
+          <!-- content -->
+          <div class="px-5 lg:px-0 flex items-center justify-between flex-col lg:flex-row-reverse">
+
+            <div class="image mb-12 lg:mb-0">
+              <img src="images/illustration-editor-mobile.svg" alt="illustration-editor-mobile" class="lg:hidden">
+              <img src="images/illustration-editor-desktop.svg" alt="illustration-editor-desktop" class="hidden lg:flex absolute -right-[18.125rem] top-[4.5rem]">
+            </div>
+
+            <div class="text text-center lg:text-left lg:w-[33.75rem]">
+              <div class="mb-12">
+                <p class="mb-6 text-3xl text-footerBg font-semibold" role="heading">Introducing an extensible editor</p>
+                <p class="text-lg text-bodyCopy font-normal">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+              </div>
+              <div>
+                <p class="mb-6 text-3xl text-footerBg font-semibold" role="heading">Robust content management</p>
+                <p class="text-lg text-bodyCopy font-normal">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- infrastructure -->
+
+      <section class="relative bg-veryDDB mt-[10.9375rem] lg:mt-0 h-[38.9375rem] lg:h-[25rem] rounded-tr-[5rem] rounded-bl-[5rem] ">
+        <div class="container">
+
+        </div>
+      </section>
     </main>
     <!--  
-  Designed for the future
-
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+  
 
   State of the Art Infrastructure
   With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
