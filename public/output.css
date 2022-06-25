@@ -601,6 +601,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6.25rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
+}
+
 .block{
   display: block;
 }
@@ -655,6 +667,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full{
   height: 100%;
+}
+
+.h-\[56\.5rem\]{
+  height: 56.5rem;
 }
 
 .w-\[10\.625rem\]{
@@ -829,6 +845,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .overflow-auto{
   overflow: auto;
 }
@@ -839,6 +867,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-x-hidden{
   overflow-x: hidden;
+}
+
+.text-clip{
+  text-overflow: clip;
 }
 
 .rounded-md{
@@ -853,12 +885,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.rounded-t{
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
 .rounded-bl-\[5rem\]{
   border-bottom-left-radius: 5rem;
 }
 
 .rounded-tr-\[5rem\]{
   border-top-right-radius: 5rem;
+}
+
+.rounded-tr{
+  border-top-right-radius: 0.25rem;
 }
 
 .border{
@@ -886,6 +931,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-mobileMenuBg{
   background-color: hsla(240, 2%, 79%, 0.8);
+}
+
+.bg-footerBg{
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 10% 16% / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -951,6 +1001,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pt-\[3\.25rem\]{
@@ -1040,6 +1095,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-bodyCopy{
   --tw-text-opacity: 1;
   color: hsl(207 13% 34% / var(--tw-text-opacity));
+}
+
+.text-footerText{
+  --tw-text-opacity: 1;
+  color: hsl(240 2% 79% / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1337,6 +1397,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 50rem;
   }
 
+  .lg\:h-\[22\.5rem\]{
+    height: 22.5rem;
+  }
+
   .lg\:w-\[33\.75rem\]{
     width: 33.75rem;
   }
@@ -1407,8 +1471,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row-reverse;
   }
 
+  .lg\:items-start{
+    align-items: flex-start;
+  }
+
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
   }
 
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
@@ -1460,6 +1532,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 7.1875rem;
   }
 
+  .lg\:pr-\[13\.75rem\]{
+    padding-right: 13.75rem;
+  }
+
+  .lg\:pr-\[13\.5rem\]{
+    padding-right: 13.5rem;
+  }
+
+  .lg\:pr-\[13\.25rem\]{
+    padding-right: 13.25rem;
+  }
+
+  .lg\:pr-\[1\.25rem\]{
+    padding-right: 1.25rem;
+  }
+
+  .lg\:pr-\[11\.25rem\]{
+    padding-right: 11.25rem;
+  }
+
   .lg\:text-left{
     text-align: left;
   }
@@ -1477,6 +1569,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-\[1rem\]{
+    font-size: 1rem;
   }
 
   .lg\:before\:-right-\[93\%\]::before{
