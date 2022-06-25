@@ -915,6 +915,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.font-ubuntu{
+  font-family: "Ubuntu", "sans-serif";
+}
+
+.font-overPass{
+  font-family: "Overpass", "sans-serif";
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -950,6 +958,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-normal{
   font-weight: 400;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .text-textLIght{
