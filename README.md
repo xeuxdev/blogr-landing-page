@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Live Site URL: [live site](https://headbwoi.github.io/blogr-landing-page/)
 
 ## My process
 
